@@ -1,12 +1,20 @@
-package org.example.calc.lesson2.DZ2.Stuff;
+package org.example.lesson2.DZ2.Stuff;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Motorcycle extends Vehicle {
+public class Car extends Vehicle {
     @Override
-    int vehicleAssembly() {
+    public int testDrive() {
+        speed = 60;
+        return speed;
+    }
+
+    @Override
+    public int vehicleAssembly() {
         List<Wheel> wheels = new ArrayList<>();
+        wheels.add(new Wheel());
+        wheels.add(new Wheel());
         wheels.add(new Wheel());
         wheels.add(new Wheel());
         int quantityWheels = wheels.size();
@@ -18,9 +26,7 @@ public class Motorcycle extends Vehicle {
         speed = 0;
     }
 
-    @Override
-    int testDrive() {
-        speed = 75;
-        return speed;
-    }
+
+
+
 }
