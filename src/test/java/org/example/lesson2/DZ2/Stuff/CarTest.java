@@ -1,4 +1,4 @@
-package org.example.calc.lesson2.DZ2.Stuff;
+package org.example.lesson2.DZ2.Stuff;
 
 import org.junit.jupiter.api.Test;
 
